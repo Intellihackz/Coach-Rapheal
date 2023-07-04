@@ -1,19 +1,18 @@
+import "./Components.css";
 function Header() {
   return (
-    <div className=" flex justify-between mx-auto">
-      <div>
+    <div className=" nav flex justify-between mx-auto">
+      <div className="logo">
         <img src="/logo.png" alt="logo" />
       </div>
-      <div className=" flex justify-between list-none  mx-">
-        <li className=" m-7">Home</li>
-        <li className=" m-7">About us</li>
-        <li className=" m-7">Services</li>
-        <li className=" m-7">Fees</li>
+      <div className=" link flex my-7 mx-8">
+          <li className="list-none mx-7" ><a href="#">Home</a></li>
+          <li className="list-none mx-7"><a href="#">About us</a></li>
+          <li className="list-none mx-7"><a href="#">Services</a></li>
+          <li className="list-none mx-7"><a href="#">Fees</a></li>
       </div>
-      <div className=" px-5">
-        <button className=" text-blue-500 bg-transparent border-blue-500">
-          Sign up
-        </button>
+      <div className="  my-7">
+        <button className="btn bg-transparent text-blue-600 border-blue-600">Sign up</button>
       </div>
     </div>
   );
